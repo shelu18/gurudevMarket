@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/gurudevMarket" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         {/* Add more routes as needed */}
