@@ -13,9 +13,9 @@ export default function Header() {
       </div>
       <nav>
         <Link className="nav-btn" to="/">Home</Link>
-        <Link className="nav-btn" to="/about">About Us</Link>
-        <Link className="nav-btn" to="/contact">Contact Us</Link>
-        <Link className="nav-cta" to="#contact">Book Your Shop</Link>
+        <Link className="nav-btn" to="/about">About</Link>
+        <Link className="nav-btn" to="/contact">Contact</Link>
+        <Link className="nav-cta" to="#contact">Book Shop</Link>
       </nav>
     </header>
   );

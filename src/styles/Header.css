@@ -1,3 +1,32 @@
+@media (max-width: 600px) {
+  .nav-cta {
+    font-size: 0.92rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+    min-width: unset;
+    max-width: 100px;
+    white-space: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Responsive navigation for mobile */
+@media (max-width: 600px) {
+  .main-header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn, .nav-cta {
+    font-size: 0.98rem;
+    padding: 7px 10px;
+    white-space: nowrap;
+  }
+}
 /* Logo image styling */
 .logo-mark {
   width: 48px;

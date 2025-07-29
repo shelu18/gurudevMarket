@@ -6,6 +6,7 @@ import area1 from '../assets/marketimg/area1.jpg';
 import area2 from '../assets/marketimg/area2.jpg';
 import area3 from '../assets/marketimg/area3.jpg';
 import '../styles/landingpage.css';
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -61,28 +62,36 @@ export default function LandingPage() {
       <header className="landing-header">
         <img src={headerImage} alt="Gurudev Market" className="market-banner" />
         <div className="overlay">
-          <h1>{t("welcome")}</h1>
-          <p className="tagline">Your Gateway to Growing Business on the Highway!</p>
-          <a href="#contact" className="cta-btn">{t("book_shop")}</a>
+          <h1>{t("header.welcome")}</h1>
+          <p className="tagline">{t("landingPage.tagline")}</p>
+          <a href="#contact" className="cta-btn">{t("landingPage.book_shop")}</a>
         </div>
       </header>
 
       <section className="features-section">
-        <h2>Why Choose Gurudev Market?</h2>
+        <h2>{t("landingPage.why_choose")}</h2>
         <div className="features-list">
-          {features.map((feat, idx) => (
-            <div className="feature-card" key={idx}>
-              <div className="feature-icon">{feat.icon}</div>
-              <h3>{feat.title}</h3>
-              <p>{feat.desc}</p>
-            </div>
-          ))}
+          <div className="feature-card">
+            <div className="feature-icon">🏪</div>
+            <h3>{t("landingPage.available_shops")}</h3>
+            <p>{t("landingPage.modern_shop_desc")}</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">🚻</div>
+            <h3>{t("landingPage.clean_facilities")}</h3>
+            <p>{t("landingPage.clean_facilities_desc")}</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">📍</div>
+            <h3>{t("landingPage.prime_location")}</h3>
+            <p>{t("landingPage.prime_location_desc")}</p>
+          </div>
         </div>
       </section>
 
       {/* Carousel Section */}
       <section className="market-gallery">
-        <h2>{t("explore_market")}</h2>
+        <h2>{t("landingPage.explore_market")}</h2>
         <div className="native-carousel-outer">
           <div className="native-carousel-inner" style={{ transform: `translateX(-${current * 100}%)` }}>
             {marketImages.map((img, idx) => (
@@ -105,21 +114,19 @@ export default function LandingPage() {
       </section>
 
       <section className="about-market">
-        <h2>About Gurudev Market</h2>
-        <p>
-          Gurudev Market is a new commercial destination on the highway near Depalpur. We offer flexible shop spaces for entrepreneurs, with high visibility and a range of facilities. Join a vibrant community of businesses and customers!
-        </p>
+        <h2>{t("landingPage.about_market_title")}</h2>
+        <p>{t("landingPage.about_market_desc")}</p>
       </section>
 
       <section className="cta-section" id="contact">
-        <h2>Interested in Booking a Shop?</h2>
-        <p>Contact us today or fill out our booking form below to secure your space.</p>
-        <a href="/contact" className="cta-btn">{t("contact_us")}</a>
+        <h2>{t("landingPage.interested_booking")}</h2>
+        <p>{t("landingPage.contact_today")}</p>
+        <Link to="/contact" className="cta-btn">{t("footer.contact_us")}</Link>
       </section>
 
       <footer className="landing-footer">
-        <div>🏢 &nbsp; Gurudev Market, Jalodiya Panth Betma Road, Depalpur</div>
-        <div>📞 &nbsp; +91-9754265265 &nbsp; | &nbsp; © 2025 Gurudev Market</div>
+        <div>🏢 &nbsp; {t("landingPage.footer_address")}</div>
+        <div>📞 &nbsp; {t("landingPage.footer_phone")} &nbsp; | &nbsp; {t("landingPage.footer_copyright")}</div>
       </footer>
     </div>
   );

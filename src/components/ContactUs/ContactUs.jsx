@@ -31,36 +31,36 @@ export default function ContactUs() {
   return (
     <div className="contact-container">
       <img src={contactBanner} alt="Contact banner" className="contact-banner" />
-      <h1>{t('contact_us')}</h1>
+      <h1>{t('footer.contact_us')}</h1>
       <div className="contact-info-row">
         <div className="contact-details-box">
-          <h2>{t('contact_details') || "Owner Contact"}</h2>
-          <p><strong>{t('phone') || "Phone"}:</strong> <a href={`tel:${OWNER_PHONE}`}>{OWNER_PHONE}</a></p>
-          <p><strong>{t('email') || "Email"}:</strong> <a href={`mailto:${OWNER_EMAIL}`}>{OWNER_EMAIL}</a></p>
+          <h2>{t('contactForm.contact_details') || "Owner Contact"}</h2>
+          <p><strong>{t('contactForm.phone') || "Phone"}:</strong> <a href={`tel:${OWNER_PHONE}`}>{OWNER_PHONE}</a></p>
+          <p><strong>{t('contactForm.email') || "Email"}:</strong> <a href={`mailto:${OWNER_EMAIL}`}>{OWNER_EMAIL}</a></p>
           <div className="contact-desc">
-            {t('contact_owner_note') || "You may call or email us for urgent queries or fill the booking form alongside."}
+            {t('contactForm.contact_owner_note') || "You may call or email us for urgent queries or fill the booking form alongside."}
           </div>
         </div>
         <form className="contact-form-box" onSubmit={handleSubmit}>
-          <h2>{t('enquiry_form') || "Shop Booking / Enquiry"}</h2>
+          <h2>{t('contactForm.enquiry_form') || "Shop Booking / Enquiry"}</h2>
           <label>
-            {t('full_name') || "Full Name"}<span>*</span>
+            {t('contactForm.full_name') || "Full Name"}<span>*</span>
             <input type="text" name="name" value={form.name} onChange={handleChange} required />
           </label>
           <label>
-            {t('address') || "Address"}<span>*</span>
+            {t('contactForm.address') || "Address"}<span>*</span>
             <input type="text" name="address" value={form.address} onChange={handleChange} required />
           </label>
           <label>
-            {t('mobile_number') || "Mobile Number"}<span>*</span>
+            {t('contactForm.mobile_number') || "Mobile Number"}<span>*</span>
             <input type="tel" name="mobile" value={form.mobile} onChange={handleChange} required maxLength={12} minLength={10} pattern="[0-9]+" />
           </label>
           <label>
-            {t('purpose_open_shop') || "Purpose (What shop do you want to open?)"}<span>*</span>
+            {t('contactForm.purpose') || "Purpose (What shop do you want to open?)"}<span>*</span>
             <input type="text" name="purpose" value={form.purpose} onChange={handleChange} required />
           </label>
-          <button className="contact-form-btn" type="submit">{t('send_enquiry') || "Send Enquiry"}</button>
-          {submitted && <div className="contact-form-success">{t('thank_you_enquiry') || "Thank you! Your enquiry was sent."}</div>}
+          <button className="contact-form-btn" type="submit">{t('contactForm.submit') || "Send Enquiry"}</button>
+          {submitted && <div className="contact-form-success">{t('contactForm.success_message') || "Thank you! Your enquiry was sent."}</div>}
         </form>
       </div>
     </div>

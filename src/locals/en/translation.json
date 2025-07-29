@@ -1,9 +1,30 @@
+{
+    "aboutUs": {
+    "title": "About Gurudev Market",
+    "description": "Gurudev Market is a new commercial destination on the highway near Depalpur. We offer flexible shop spaces for entrepreneurs, with high visibility and a range of facilities. Join a vibrant community of businesses and customers!",
+    "vision": "Our Vision",
+    "vision_text": "To empower local businesses and create a thriving marketplace for all.",
+    "mission": "Our Mission",
+    "mission_text": "To provide modern, accessible, and well-equipped shop spaces for entrepreneurs and customers.",
+    "owners_title": "Meet Our Owners",
+    "owner1_name": "Devendra Singh",
+    "owner2_name": "Shailendra Singh",
+    "owner3_name": "Vishnu Singh",
+    "owner1_desc": "Devendra is passionate about supporting local business growth.",
+    "owner2_desc": "Shailendra brings years of experience in commercial real estate.",
+    "owner3_desc": "Vishnu is dedicated to customer satisfaction and community building."
+  },
 
   
-{
+
   "header": {
     "welcome": "Welcome to Gurudev Market",
     "about_us": "About Us"
+  },
+  "navigation": {
+    "explore_market": "Explore Our Marketplace",
+    "book_shop": "Book Your Shop",
+    "contact_us": "Contact Us"
   },
   "footer": {
     "contact_us": "Contact Us"
@@ -30,6 +51,48 @@
   "thank_you_enquiry": "Thank you! Your enquiry was sent.",
   "explore_market": "Explore Our Marketplace",
   "book_shop": "Book Your Shop"
-}
-
+},
+  "features": {
+    "available_shops": "Available Shops",
+    "clean_facilities": "Clean Facilities",
+    "prime_location": "Prime Location"
+  },
+  "landingPage": {
+  "explore_market": "Explore Our Marketplace",
+  "book_shop": "Book Your Shop",
+  "available_shops": "Available Shops",
+  "clean_facilities": "Clean Facilities",
+  "prime_location": "Prime Location",
+  "why_choose": "Why Choose Gurudev Market?",
+  "modern_shop_desc": "Modern shop spaces on highway for rent. Reserve your place in a growing marketplace.",
+  "clean_facilities_desc": "Well-maintained washrooms and 24/7 clean drinking water for all tenants and customers.",
+  "prime_location_desc": "On the main highway near Depalpur, connecting rural commerce to major cities.",
+  "tagline": "Your Gateway to Growing Business on the Highway!",
+  "about_market_title": "About Gurudev Market",
+  "about_market_desc": "Gurudev Market is a new commercial destination on the highway near Depalpur. We offer flexible shop spaces for entrepreneurs, with high visibility and a range of facilities. Join a vibrant community of businesses and customers!",
+  "interested_booking": "Interested in Booking a Shop?",
+  "contact_today": "Contact us today or fill out our booking form below to secure your space.",
+  "footer_address": "Gurudev Market, Jalodiya Panth Betma Road, Depalpur",
+  "footer_phone": "+91-9754265265",
+  "footer_copyright": "© 2025 Gurudev Market"
+},
+  "contactForm": {
+    "contact_details": "Owner Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "contact_owner_note": "You may call or email us for urgent queries or fill the booking form alongside.",
+    "enquiry_form": "Shop Booking / Enquiry",
+    "full_name": "Full Name",
+    "address": "Address",
+    "mobile_number": "Mobile Number",
+    "purpose": "Purpose (What shop do you want to open?)",
+    "submit": "Submit",
+    "success_message": "Your enquiry has been sent successfully!",
+    "error_message": "There was an error. Please try again."
+  },
+  
+  "footer_info": {
+    "address": "🏢 Gurudev Market, Jalodiya Pithanth Betma Road, Depalpur",
+    "phone": "📞 +91-9754265265"
+  }
 }
