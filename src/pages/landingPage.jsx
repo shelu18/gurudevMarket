@@ -64,7 +64,7 @@ export default function LandingPage() {
         <div className="overlay">
           <h1>{t("header.welcome")}</h1>
           <p className="tagline">{t("landingPage.tagline")}</p>
-          <a href="#contact" className="cta-btn">{t("landingPage.book_shop")}</a>
+          <Link to="/contact" className="cta-btn">{t("landingPage.book_shop")}</Link>
         </div>
       </header>
 

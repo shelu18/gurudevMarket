@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import marketBanner from "../assets/market_banner.png";
 import vishnuImg from "../assets/owners/vishnu.jpg";
 import devendraImg from "../assets/owners/devendra.jpg";
@@ -8,42 +9,45 @@ import "../styles/AboutUs.css";
 
 const owners = [
   {
-    name: "Vishnu Parihar",
+    nameKey: "owner3_name",
     title: "Founder",
-    desc: "Visionary developer behind Gurudev Market. Passionate about rural business growth and creating new opportunities for entrepreneurs.",
+    descKey: "owner3_desc",
     image: vishnuImg,
   },
   {
-    name: "Devendra Parihar",
+    nameKey: "owner1_name",
     title: "Co-Founder",
-    desc: "Strategist and business expert. Ensures seamless marketplace operations and drives expansion.",
+    descKey: "owner1_desc",
     image: devendraImg,
   },
   {
-    name: "Shailendra Parihar",
+    nameKey: "owner2_name",
     title: "Manager",
-    desc: "Market manager and community builder focused on supporting tenants, maintaining facilities, and promoting the spirit of collaboration.",
+    descKey: "owner2_desc",
     image: shailendraImg,
   },
 ];
 
 export default function AboutUs() {
+  const { t } = useTranslation();
   return (
     <div className="aboutus-container">
       <img src={marketBanner} alt="Gurudev Market" className="aboutus-banner" />
-      <h1>About Gurudev Market</h1>
+      <h1>{t("aboutUs.title")}</h1>
       <p className="aboutus-desc">
-        Gurudev Market stands as the landmark commercial hub on the highway near Depalpur, providing versatile shop rental options for entrepreneurs in both rural and urban domains. Our mission is to foster growth, opportunity, and progress by offering world-class facilities—modern shops, clean restrooms, drinking water, and a secure environment—all in one place. <br /><br />
-        We’re proud to be led by a dynamic family team that brings innovation, reliability, and genuine care to every tenant and customer. Meet our owners:
+        {t("aboutUs.description")}<br /><br />
+        <strong>{t("aboutUs.vision")}</strong>: {t("aboutUs.vision_text")}<br />
+        <strong>{t("aboutUs.mission")}</strong>: {t("aboutUs.mission_text")}<br /><br />
+        {t("aboutUs.owners_title")}
       </p>
       <section className="owners-section">
         {owners.map((owner, idx) => (
           <OwnerCard
-            key={owner.name}
+            key={owner.nameKey}
             image={owner.image}
-            name={owner.name}
+            name={t(`aboutUs.${owner.nameKey}`)}
             title={owner.title}
-            desc={owner.desc}
+            desc={t(`aboutUs.${owner.descKey}`)}
             left={idx % 2 === 0}
           />
         ))}

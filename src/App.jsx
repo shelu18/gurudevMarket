@@ -7,7 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./components/ContactUs/contactus.jsx";
 import './i18n';
 
-// import ContactUs from "./pages/ContactUs";
+ 
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+       
         {/* Add more routes as needed */}
       </Routes>
     </Router>
