@@ -56,11 +56,7 @@ export default function LandingPage() {
       <section className="features-section">
         <h2>{t("landingPage.why_choose")}</h2>
         <div className="features-list">
-          <div className="feature-card">
-            <div className="feature-icon">🏪</div>
-            <h3>{t("landingPage.available_shops")}</h3>
-            <p>{t("landingPage.modern_shop_desc")}</p>
-          </div>
+      
           <div className="feature-card">
             <div className="feature-icon">🚻</div>
             <h3>{t("landingPage.clean_facilities")}</h3>
