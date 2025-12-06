@@ -7,6 +7,7 @@ import area2 from '../assets/marketimg/img2.jpeg';
 import area3 from '../assets/marketimg/img3.jpeg';
 import '../styles/landingpage.css';
 import { Link } from "react-router-dom";
+import { getAvailableShopsCount, getTotalShopsCount } from "../data/shops";
 
 const features = [
   {
@@ -116,6 +117,27 @@ export default function LandingPage() {
       <section className="about-market">
         <h2>{t("landingPage.about_market_title")}</h2>
         <p>{t("landingPage.about_market_desc")}</p>
+      </section>
+
+      {/* Shop Availability Section */}
+      <section className="shop-availability">
+        <h2>📊 {t("shops.shops_available")}</h2>
+        <div className="availability-stats">
+          <div className="stat-box">
+            <div className="stat-number">{getAvailableShopsCount()}</div>
+            <div className="stat-label">{t("shops.available")}</div>
+          </div>
+          <div className="stat-divider">/</div>
+          <div className="stat-box">
+            <div className="stat-number">{getTotalShopsCount()}</div>
+            <div className="stat-label">Total</div>
+          </div>
+        </div>
+        <p className="availability-desc">{t("shops.starting_at")} <span className="price-highlight">₹5,000/{t("shops.month")}</span></p>
+        <div className="availability-buttons">
+          <Link to="/shops" className="cta-btn primary-btn">{t("shops.view_all_shops")}</Link>
+          <Link to="/contact" className="cta-btn secondary-btn">{t("shops.contact_us")}</Link>
+        </div>
       </section>
 
       <section className="cta-section" id="contact">

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSearchParams } from 'react-router-dom';
 import contactBanner from '../../assets/market_banner.png';
 import '../../styles/ContactUs.css';
 
@@ -8,8 +9,19 @@ const OWNER_EMAIL = "gurudevmarket555@gmail.com";
 
 export default function ContactUs() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
   const [form, setForm] = useState({ name: '', address: '', mobile: '', purpose: '' });
   const [submitted, setSubmitted] = useState(false);
+
+  // Pre-fill purpose if coming from shop inquiry
+  useEffect(() => {
+    const shopNumber = searchParams.get('shop');
+    const shopSize = searchParams.get('size');
+    if (shopNumber) {
+      const preFillText = `Interested in Shop #${shopNumber}${shopSize ? ` (${shopSize} ft)` : ''}`;
+      setForm(prev => ({ ...prev, purpose: preFillText }));
+    }
+  }, [searchParams]);
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
 
