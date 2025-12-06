@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import marketBanner from "../assets/market_banner.png";
+import marketRealImg from "../assets/marketimg/img1.jpeg";
 import vishnuImg from "../assets/owners/vishnu.jpg";
 import devendraImg from "../assets/owners/devendra.jpg";
 import shailendraImg from "../assets/owners/shailendra.jpg";
@@ -32,25 +32,46 @@ export default function AboutUs() {
   const { t } = useTranslation();
   return (
     <div className="aboutus-container">
-      <img src={marketBanner} alt="Gurudev Market" className="aboutus-banner" />
-      <h1>{t("aboutUs.title")}</h1>
-      <p className="aboutus-desc">
-        {t("aboutUs.description")}<br /><br />
-        <strong>{t("aboutUs.vision")}</strong>: {t("aboutUs.vision_text")}<br />
-        <strong>{t("aboutUs.mission")}</strong>: {t("aboutUs.mission_text")}<br /><br />
-        {t("aboutUs.owners_title")}
-      </p>
+      <div className="aboutus-hero">
+        <img src={marketRealImg} alt="Gurudev Market" className="aboutus-banner" />
+        <div className="hero-overlay">
+          <h1>{t("aboutUs.title")}</h1>
+        </div>
+      </div>
+      
+      <div className="aboutus-content">
+        <p className="aboutus-desc">
+          {t("aboutUs.description")}
+        </p>
+        
+        <div className="vision-mission-cards">
+          <div className="vm-card">
+            <div className="vm-icon">🎯</div>
+            <h3>{t("aboutUs.vision")}</h3>
+            <p>{t("aboutUs.vision_text")}</p>
+          </div>
+          <div className="vm-card">
+            <div className="vm-icon">🚀</div>
+            <h3>{t("aboutUs.mission")}</h3>
+            <p>{t("aboutUs.mission_text")}</p>
+          </div>
+        </div>
+      </div>
+      
       <section className="owners-section">
-        {owners.map((owner, idx) => (
-          <OwnerCard
-            key={owner.nameKey}
-            image={owner.image}
-            name={t(`aboutUs.${owner.nameKey}`)}
-            title={owner.title}
-            desc={t(`aboutUs.${owner.descKey}`)}
-            left={idx % 2 === 0}
-          />
-        ))}
+        <h2 className="owners-title">{t("aboutUs.owners_title")}</h2>
+        <div className="owners-grid">
+          {owners.map((owner, idx) => (
+            <OwnerCard
+              key={owner.nameKey}
+              image={owner.image}
+              name={t(`aboutUs.${owner.nameKey}`)}
+              title={owner.title}
+              desc={t(`aboutUs.${owner.descKey}`)}
+              left={idx % 2 === 0}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );

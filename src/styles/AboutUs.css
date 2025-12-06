@@ -1,29 +1,151 @@
 .aboutus-container {
-  max-width: 1000px;
-  margin: 0 auto 35px auto;
-  padding: 18px;
-  background: #f6f3fa;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #f9fafe 0%, #ffffff 100%);
 }
+
+.aboutus-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
 .aboutus-banner {
   width: 100%;
-  border-radius: 16px;
-  margin-bottom: 22px;
-  min-height: 180px;
+  height: 100%;
   object-fit: cover;
-  box-shadow: 0 5px 22px #764ba233;
+  filter: brightness(0.7);
 }
-.aboutus-desc {
-  margin: 12px 0 40px 0;
-  font-size:1.18rem;
-  color: #341563;
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
+  padding: 0 20px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  margin: 0;
 }
+
+.aboutus-content {
+  padding: 0 20px 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.aboutus-desc {
+  font-size: 1.15rem;
+  color: #4a4a4a;
+  text-align: center;
+  line-height: 1.8;
+  margin: 0 0 50px 0;
+}
+
+.vision-mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px 0 60px 0;
+}
+
+.vm-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px 25px;
+  box-shadow: 0 2px 15px rgba(102, 126, 234, 0.1);
+  text-align: center;
+  border: 1px solid rgba(102, 126, 234, 0.08);
+}
+
+.vm-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 2px 4px rgba(102, 126, 234, 0.2));
+}
+
+.vm-card h3 {
+  color: #667eea;
+  font-size: 1.4rem;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.vm-card p {
+  color: #5a5a5a;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .owners-section {
+  padding: 60px 20px 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecf5 100%);
+}
+
+.owners-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2d2e32;
+  margin: 0 0 50px 0;
+  font-weight: 700;
+}
+
+.owners-grid {
   display: flex;
   flex-direction: column;
-  gap: 44px;
-  margin: 15px 0 35px 0;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-@media (max-width:700px){
-  .owners-section {gap:30px;}
+
+@media (max-width: 768px) {
+  .aboutus-hero {
+    height: 300px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+  
+  .aboutus-desc {
+    font-size: 1.05rem;
+  }
+  
+  .vision-mission-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 0 40px 0;
+  }
+  
+  .vm-card {
+    padding: 30px 20px;
+  }
+  
+  .owners-section {
+    padding: 40px 15px 60px 15px;
+  }
+  
+  .owners-title {
+    font-size: 1.8rem;
+    margin: 0 0 35px 0;
+  }
+  
+  .owners-grid {
+    gap: 25px;
+  }
 }

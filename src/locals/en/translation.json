@@ -10,9 +10,9 @@
       "owner1_name": "Devendra Parihar",
       "owner2_name": "Shailendra Parihar",
       "owner3_name": "Vishnu Parihar",
-      "owner1_desc": "Devendra is passionate about growing local businesses.",
-      "owner2_desc": "Shailendra has years of experience in commercial real estate.",
-      "owner3_desc": "Vishnu is dedicated to customer satisfaction and community building."
+      "owner1_desc": "A visionary co-founder with exceptional leadership skills. Devendra brings innovative business strategies and ensures every detail of the market aligns with our growth vision. His dedication to excellence drives our success.",
+      "owner2_desc": "Engineer turned market manager, Shailendra combines technical expertise with practical business acumen. His innovative approach has transformed our operations, creating a seamless, modern experience for all stakeholders.",
+      "owner3_desc": "The mastermind behind Gurudev Market. Vishnu's entrepreneurial spirit and community-first philosophy laid the foundation for this thriving marketplace. His strategic vision continues to shape our future."
     },
 
   
@@ -56,9 +56,15 @@
   "clean_facilities": "Clean Facilities",
   "prime_location": "Prime Location",
   "why_choose": "Why Choose Gurudev Market?",
-  "modern_shop_desc": "Modern shop spaces on highway for rent. Reserve your place in a growing marketplace.",
-  "clean_facilities_desc": "Well-maintained washrooms and 24/7 clean drinking water for all tenants and customers.",
-  "prime_location_desc": "On the main highway near Depalpur, connecting rural commerce to major cities.",
+    "modern_shop_desc": "Modern shop spaces on highway for rent. Reserve your place in a growing marketplace.",
+    "clean_facilities_desc": "Well-maintained washrooms and 24/7 clean drinking water for all tenants and customers.",
+    "prime_location_desc": "On the main highway near Depalpur, connecting rural commerce to major cities.",
+    "ample_parking": "Ample Parking",
+    "ample_parking_desc": "Spacious parking area with easy access for customers and delivery vehicles.",
+    "power_supply": "24/7 Electricity",
+    "power_supply_desc": "Uninterrupted power supply to ensure your business runs smoothly at all times.",
+    "security": "CCTV & Security",
+    "security_desc": "Round-the-clock security with CCTV surveillance for complete peace of mind.",
   "tagline": "Your Gateway to Growing Business on the Highway!",
   "about_market_title": "About Gurudev Market",
   "about_market_desc": "Gurudev Market is a new commercial destination on the highway near Depalpur. We offer flexible shop spaces for entrepreneurs, with high visibility and a range of facilities. Join a vibrant community of businesses and customers!",

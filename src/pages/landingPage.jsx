@@ -71,6 +71,21 @@ export default function LandingPage() {
             <h3>{t("landingPage.prime_location")}</h3>
             <p>{t("landingPage.prime_location_desc")}</p>
           </div>
+          <div className="feature-card">
+            <div className="feature-icon">🚗</div>
+            <h3>{t("landingPage.ample_parking")}</h3>
+            <p>{t("landingPage.ample_parking_desc")}</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">⚡</div>
+            <h3>{t("landingPage.power_supply")}</h3>
+            <p>{t("landingPage.power_supply_desc")}</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">🛡️</div>
+            <h3>{t("landingPage.security")}</h3>
+            <p>{t("landingPage.security_desc")}</p>
+          </div>
         </div>
       </section>
 

@@ -1,46 +1,96 @@
 .ownercard-main {
   display: flex;
   align-items: center;
-  gap: 30px;
-  background: linear-gradient(120deg, #fff 80%, #e0d7f5 100%);
-  border-radius:17px;
-  box-shadow:0 3px 16px #764ba222;
-  padding: 28px 18px 24px 18px;
-  margin-bottom: 0;
+  gap: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.12);
+  padding: 35px 30px;
+  border: 1px solid rgba(102, 126, 234, 0.08);
 }
-.ownercard-main.right {flex-direction: row-reverse;}
+
+.ownercard-main.right {
+  flex-direction: row-reverse;
+}
+
 .ownercard-img-frame {
   position: relative;
-  width: 120px; min-width: 120px; height: 120px;
-  border-radius: 24px;
-  background: #f0e7fc;
-  box-shadow: 6px 8px 19px #764ba244;
-  display:flex; align-items:center; justify-content: center;
-}
-.ownercard-img {
-  width: 106px;
-  height: 106px;
-  object-fit: cover;
-  border-radius: 18px;
-  border: 4px solid #784da8;
-  position: relative;
-  z-index: 2;
-}
-.ownercard-frame-decor {
-  position: absolute;
   width: 140px;
-  height: 120px;
-  top: -10px; left: -10px;
-  z-index: 1;
-  background: linear-gradient(120deg, rgba(120,77,168,0.11) 20%, #e5d5f9 100%);
-  border-radius: 35px 50px 35px 30px;
-  filter: blur(9px);
+  min-width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 5px;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.25);
 }
-.ownercard-info { flex:1;}
-.ownercard-info h2 { margin:0 0 8px 0; color: #731c93; font-size:1.45rem;}
-.owner-title { color: #562374; font-weight:600; font-size:1rem; margin-bottom: 10px;}
-.ownercard-info p { color:#341563; font-size:1rem; line-height:1.5;}
-@media (max-width:700px){
-  .ownercard-main, .ownercard-main.right { flex-direction: column;}
-  .ownercard-img-frame {margin-bottom:16px;}
+
+.ownercard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.ownercard-frame-decor {
+  display: none;
+}
+
+.ownercard-info {
+  flex: 1;
+}
+
+.ownercard-info h2 {
+  margin: 0 0 8px 0;
+  color: #2d2e32;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.owner-title {
+  display: inline-block;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.ownercard-info p {
+  color: #4a4a4a;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .ownercard-main,
+  .ownercard-main.right {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+  
+  .ownercard-img-frame {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+  }
+  
+  .ownercard-info {
+    text-align: center;
+  }
+  
+  .ownercard-info h2 {
+    font-size: 1.4rem;
+  }
+  
+  .ownercard-info p {
+    font-size: 1rem;
+  }
 }
