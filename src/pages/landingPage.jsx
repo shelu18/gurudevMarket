@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 // Import your images
 import headerImage from '../assets/market_banner.png';
-import area1 from '../assets/marketimg/area1.jpg';
-import area2 from '../assets/marketimg/area2.jpg';
-import area3 from '../assets/marketimg/area3.jpg';
+import area1 from '../assets/marketimg/img1.jpeg';
+import area2 from '../assets/marketimg/img2.jpeg';
+import area3 from '../assets/marketimg/img3.jpeg';
 import '../styles/landingpage.css';
 import { Link } from "react-router-dom";
 
