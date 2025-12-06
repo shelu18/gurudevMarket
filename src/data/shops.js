@@ -18,7 +18,7 @@ export const shops = [
     size: "30×12",
     sizeUnit: "ft",
     area: 360,
-    rent: 10000,
+    rent: 9000,
     isAvailable: false,
     type: "standard",
     features: [],

@@ -8,24 +8,8 @@ import area3 from '../assets/marketimg/img3.jpeg';
 import '../styles/landingpage.css';
 import { Link } from "react-router-dom";
 import { getAvailableShopsCount, getTotalShopsCount } from "../data/shops";
-
-const features = [
-  {
-    icon: "🏪",
-    title: "Available Shops",
-    desc: "Modern shop spaces on highway for rent. Reserve your place in a growing marketplace."
-  },
-  {
-    icon: "🚻",
-    title: "Clean Facilities",
-    desc: "Well-maintained washrooms and 24/7 clean drinking water for all tenants and customers."
-  },
-  {
-    icon: "📍",
-    title: "Prime Location",
-    desc: "On the main highway near Depalpur, connecting rural commerce to major cities."
-  }
-];
+import Location from "../components/Location/Location";
+import FAQ from "../components/FAQ/FAQ";
 
 const marketImages = [area1, area2, area3];
 
@@ -65,7 +49,7 @@ export default function LandingPage() {
         <div className="overlay">
           <h1>{t("header.welcome")}</h1>
           <p className="tagline">{t("landingPage.tagline")}</p>
-          <Link to="/contact" className="cta-btn">{t("landingPage.book_shop")}</Link>
+          <Link to="/book-shop" className="cta-btn">{t("landingPage.book_shop")}</Link>
         </div>
       </header>
 
@@ -139,6 +123,10 @@ export default function LandingPage() {
           <Link to="/contact" className="cta-btn secondary-btn">{t("shops.contact_us")}</Link>
         </div>
       </section>
+
+      <Location />
+
+      <FAQ />
 
       <section className="cta-section" id="contact">
         <h2>{t("landingPage.interested_booking")}</h2>

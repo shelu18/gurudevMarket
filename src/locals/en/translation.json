@@ -29,13 +29,7 @@
   "footer": {
     "contact_us": "Contact Us"
   },
-  "landingPage": {
-    "explore_market": "Explore Our Marketplace",
-    "book_shop": "Book Your Shop"
-  },
 
-
-  
   "ContactUs" :{
   "contact_us": "Contact Us",
   "contact_details": "Owner Contact",
@@ -48,9 +42,7 @@
   "mobile_number": "Mobile Number",
   "purpose_open_shop": "Purpose (What shop do you want to open?)",
   "send_enquiry": "Send Enquiry",
-  "thank_you_enquiry": "Thank you! Your enquiry was sent.",
-  "explore_market": "Explore Our Marketplace",
-  "book_shop": "Book Your Shop"
+  "thank_you_enquiry": "Thank you! Your enquiry was sent."
 },
   "features": {
     "available_shops": "Available Shops",
@@ -96,6 +88,24 @@
     "phone": "📞 +91-9754265265"
   },
 
+  "whatsapp": {
+    "chat_with_us": "Chat with us on WhatsApp",
+    "message_default": "Hello! I would like to know more about Gurudev Market."
+  },
+
+  "location": {
+    "find_us": "Find Us",
+    "visit_us": "Visit us at our prime highway location",
+    "address": "Address",
+    "timing": "Timing",
+    "open_daily": "Open Daily",
+    "contact": "Contact",
+    "get_directions": "Get Directions",
+    "nearby_landmarks": "Nearby Landmarks",
+    "school": "Shri Kalota Vidhya Peeth",
+    "bus_stand": "jalodiya kating bus stand"
+  },
+
   "shops": {
     "page_title": "Available Shops at Gurudev Market",
     "of": "of",
@@ -135,5 +145,67 @@
     "call_now": "Call Now",
     "view_all_shops": "View All Shops",
     "shops_counter": "shops available"
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about Gurudev Market",
+    "q1": "What is the rent for the shops?",
+    "a1": "The monthly rent for all shops is ₹5,000. This is a competitive rate for prime highway location with all modern facilities.",
+    "q2": "What is the minimum lease period?",
+    "a2": "The minimum lease period is 11 months. We also offer flexible renewal options based on your business needs.",
+    "q3": "What facilities are included?",
+    "a3": "All shops come with 24/7 electricity, water supply, clean washrooms, CCTV security, security guard, and ample parking space for customers.",
+    "q4": "Is there any security deposit required?",
+    "a4": "Yes, a refundable security deposit equivalent to 2 months rent (₹10,000) is required at the time of booking.",
+    "q5": "Can I modify the shop interior?",
+    "a5": "Yes, you can customize the interior of your shop according to your business needs. However, structural changes require prior approval from management.",
+    "q6": "How do I book a shop?",
+    "a6": "You can book a shop by visiting our office, calling us at +91-9754265265, or filling out the inquiry form on our website. We'll guide you through the entire process.",
+    "more_questions": "Still have questions? We're here to help!",
+    "contact_us": "Contact Us"
+  },
+
+  "bookshop": {
+    "title": "Book Your Shop Today",
+    "subtitle": "Start your business journey at Gurudev Market's prime highway location",
+    "shops_available": "shops currently available",
+    "why_book": "Why Book With Us?",
+    "benefit_affordable": "Affordable Pricing",
+    "benefit_affordable_desc": "Competitive rates starting at just ₹5,000/month with flexible payment options",
+    "benefit_location": "Prime Highway Location",
+    "benefit_location_desc": "High visibility on Jalodiya Panth Betma Road with excellent foot traffic",
+    "benefit_facilities": "Complete Facilities",
+    "benefit_facilities_desc": "24/7 electricity, water, clean washrooms, CCTV security, and ample parking",
+    "benefit_support": "Dedicated Support",
+    "benefit_support_desc": "Our team is always ready to help you succeed in your business",
+    "available_now": "Available Right Now",
+    "view_all_shops": "View All Shops",
+    "prefer_call": "Prefer to Talk?",
+    "call_timing": "Available Mon-Sat, 9 AM - 9 PM",
+    "form_title": "Shop Booking Inquiry",
+    "form_subtitle": "Fill out the form below and we'll contact you within 24 hours",
+    "full_name": "Full Name",
+    "full_name_placeholder": "Enter your full name",
+    "mobile": "Mobile Number",
+    "mobile_placeholder": "+91-",
+    "address": "Address",
+    "address_placeholder": "Your current address",
+    "business_type": "Type of Business",
+    "business_type_placeholder": "e.g., General Store, Medical Shop, Restaurant",
+    "shop_preference": "Shop Preference",
+    "any_available": "Any Available Shop",
+    "preferred_size": "Preferred Size",
+    "any_size": "Any Size",
+    "additional_requirements": "Additional Requirements",
+    "additional_requirements_placeholder": "Any specific requirements or questions?",
+    "submit_inquiry": "Submit Inquiry",
+    "form_note": "By submitting this form, you'll be redirected to WhatsApp to complete your inquiry",
+    "success_message": "Success! Opening WhatsApp...",
+    "error_name": "Please enter your name",
+    "error_mobile": "Please enter your mobile number",
+    "error_mobile_invalid": "Please enter a valid 10-digit mobile number",
+    "error_business": "Please enter your business type"
   }
 }
+

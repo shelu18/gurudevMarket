@@ -208,8 +208,93 @@
   transform: scale(1.05);
 }
 
-.cta-section { text-align:center; background: #f7e8ff; padding: 32px 10px; margin: 30px 0 0 0;}
-.landing-footer { background: #3a3e5c; color: #ccc; padding: 18px 0 6px 0; text-align:center; font-size:0.97rem; }
+.cta-section { 
+  text-align: center; 
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 70px 20px; 
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+.cta-section h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-section .cta-btn {
+  background: white;
+  color: #667eea;
+  padding: 16px 50px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  border: 3px solid white;
+  transition: all 0.3s ease;
+}
+
+.cta-section .cta-btn:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.landing-footer { 
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ecf0f1; 
+  padding: 35px 20px; 
+  text-align: center;
+}
+
+.landing-footer > div {
+  margin: 12px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.landing-footer > div:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
 /* Responsive */
 @media (max-width: 700px) {
   .native-carousel-outer { max-width: 99vw;}
@@ -217,6 +302,31 @@
   
   .shop-availability h2 {
     font-size: 1.5rem;
+  }
+
+  .cta-section {
+    padding: 50px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .cta-section p {
+    font-size: 1.05rem;
+  }
+
+  .cta-section .cta-btn {
+    padding: 14px 35px;
+    font-size: 1.05rem;
+  }
+
+  .landing-footer {
+    padding: 25px 15px;
+  }
+
+  .landing-footer > div {
+    font-size: 0.95rem;
   }
   
   .stat-number {
