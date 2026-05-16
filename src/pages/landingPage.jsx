@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 // Import your images
 import headerImage from '../assets/market_banner.png';
-import area1 from '../assets/marketimg/img1.jpeg';
-import area2 from '../assets/marketimg/img2.jpeg';
-import area3 from '../assets/marketimg/img3.jpeg';
+import area1 from '../assets/marketimg/img11.jpeg';
+import area2 from '../assets/marketimg/img22.jpeg';
+import area3 from '../assets/marketimg/img33.jpeg';
 import '../styles/landingpage.css';
 import { Link } from "react-router-dom";
 import { getAvailableShopsCount, getTotalShopsCount } from "../data/shops";
@@ -39,7 +39,7 @@ export default function LandingPage() {
         >ENGLISH</button>
         <button
           className="lang-btn"
-          style={{marginLeft: 10}}
+          style={{ marginLeft: 10 }}
           onClick={() => i18n.changeLanguage('hi')}
           disabled={i18n.language === 'hi'}
         >हिंदी</button>
@@ -56,7 +56,7 @@ export default function LandingPage() {
       <section className="features-section">
         <h2>{t("landingPage.why_choose")}</h2>
         <div className="features-list">
-      
+
           <div className="feature-card">
             <div className="feature-icon">🚻</div>
             <h3>{t("landingPage.clean_facilities")}</h3>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import marketRealImg from "../assets/marketimg/img1.jpeg";
+import marketRealImg from "../assets/marketimg/img11.jpeg";
 import vishnuImg from "../assets/owners/vishnu.jpg";
 import devendraImg from "../assets/owners/devendra.jpg";
 import shailendraImg from "../assets/owners/shailendra.jpg";
